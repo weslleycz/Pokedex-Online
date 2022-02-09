@@ -1,0 +1,22 @@
+{
+  "name": "pokedex-online",
+  "version": "1.0.0",
+  "description": "<img width=\"500px\" height=\"400px\"   src=\"https://user-images.githubusercontent.com/44758448/152666784-e8fa629c-3118-4387-8638-425c13d626db.png\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weslleycz/Pokedex-Online.git"
+  },
+  "author": "Francisco Weslley Silva de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weslleycz/Pokedex-Online/issues"
+  },
+  "homepage": "https://github.com/weslleycz/Pokedex-Online#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

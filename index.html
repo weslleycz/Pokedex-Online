@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/L.ico" />
+
+    <!--CSS do bootstrap-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--JS bundle bootstrap minificado-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--CSS global-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!--CSS do campo lista pokemons-->
+    <link rel="stylesheet" href="./css/pokerdex.css">
+
+    <!--CSS do pokemon seleconado-->
+    <link rel="stylesheet" href="./css/pokemon.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Online</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+    </nav>
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            Você precisa habilitar o JavaScript para executar este aplicativo.
+        </div>
+    </noscript>
+
+    <div class="container">
+        <div class="row row-cols-auto">
+            <!--Lista dos pokemons na pokedex-->
+            <div class="col">
+
+                <div class="btn-group">
+                    <h1 id="titulo-dex">Pokerdex</h1>
+                    <img class="btn-view" src="./assets/icons/list.png">
+                </div>
+
+                <input type="text" class="form-control">
+
+                <div class="dex-list">
+                    <div class="row">
+                        <div class="col">
+                            <div class="iten-dex">
+                                <b class="id-dex">#000</b>
+                                <div></div>
+                                <img class="dex-img"
+                                    src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="iten-dex">
+                                <b class="id-dex">#000</b>
+                                <img class="dex-img"
+                                    src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+            <!--Pokemon selecionado-->
+            <div class="col">
+                <div class="card-pokemon">
+                    <div class="card-info">
+                        <br>
+                       <h2 class="pokemon-nome">
+                           <b>Pokemon</b>
+                        </h2>
+                        <img class="pokemon-img" src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--JS global-->
+<script src="./js/main.js"></script>
+
+<!--Popper minificado-->
+<script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+<!--JS bootstrap minificado-->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>

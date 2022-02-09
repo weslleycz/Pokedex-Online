@@ -1,0 +1,20 @@
+body {
+  background-attachment: fixed;
+  background-image: url(../assets/images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F5F6FB;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: auto;
+}
