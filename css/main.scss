@@ -3,8 +3,10 @@ body {
   background-image: url(../assets/images/Background.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #F5F6FB;
+  background-color: #ffffff;
   text-decoration: none;
+  width: auto;
+  height: auto;
 }
 
 * {
@@ -17,4 +19,15 @@ img {
   width: auto;
   height: auto;
   position: auto;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a:link {
+  text-decoration: none;
 }

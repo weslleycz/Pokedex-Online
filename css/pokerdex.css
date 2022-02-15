@@ -1,45 +1,21 @@
-.dex-list {
-  margin-top: 5%;
+h3 {
+  margin-left: 2%;
+  color: black;
 }
 
-.dex-list .iten-dex {
-  width: 131px;
-  height: 115px;
-  min-width: 110px;
-  min-height: 110px;
-  background-color: #ffee00;
-  color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 1.05141px 1.05141px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1.05141px 1.05141px rgba(0, 0, 0, 0.25);
-  border-radius: 13.1426px;
+.id-dex {
+  margin-left: 2%;
+  font-size: 0.90em;
+  color: #6e6b6b;
 }
 
-.dex-list .dex-img {
-  width: 50%;
-  height: 60%;
-  margin-left: 45%;
-  margin-top: 10%;
+.iten-dex {
+  background-color: #e6f0f0;
+  margin-top: 3%;
 }
 
-.dex-list .id-dex {
-  margin-top: 20px;
-  margin-left: 65%;
-}
-
-.btn-view {
-  height: 14%;
-  width: 14%;
-  margin-top: 20%;
-  margin-left: 80%;
-}
-
-.form-control {
-  width: 100%;
-  background-image: url(../assets/icons/search.png);
-  background-repeat: no-repeat;
-  background-position: 98%;
+.types {
+  margin-left: 10%;
 }
 
 #titulo-dex {
@@ -48,7 +24,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 25px;
+  margin-left: 5%;
   line-height: 47px;
-  margin-top: 10%;
 }
 /*# sourceMappingURL=pokerdex.css.map */

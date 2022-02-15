@@ -1,0 +1,32 @@
+$normal:#A8A878;
+$fire : #F08030;
+$water :#0400ff;
+$grass: #62e914;
+$flying: #8940e7;
+$fighting :#6b0101;
+$poison : #A040A0;
+$electric :#fffb0e;
+$ground : #E0C068;
+$rock : #B8A038;
+$psychic:#F85888;
+$ice :#98D8D8;
+$bug :#a5b60c;
+$ghost :#705898;
+$steel :#B8B8D0;
+$dragon :#7038F8;
+$dark :#000000;
+$fairy :#EE99AC;
+
+@mixin color-type($color, $text-color) {
+    background-color: $color;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: inline-block;
+    border-radius: 20.6522px;
+    margin: 2%;
+    width: 40%;
+}
+
+.normal {
+    @include color-type($fire, rgb(255, 255, 255));
+}

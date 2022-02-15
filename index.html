@@ -22,73 +22,113 @@
     <link rel="stylesheet" href="./css/pokemon.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex Online</title>
+    <title>Pokédex Online</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-    </nav>
-
-    <noscript>
-        <div class="alert alert-danger" role="alert">
-            Você precisa habilitar o JavaScript para executar este aplicativo.
-        </div>
-    </noscript>
-
-    <div class="container">
-        <div class="row row-cols-auto">
-            <!--Lista dos pokemons na pokedex-->
-            <div class="col">
-
-                <div class="btn-group">
-                    <h1 id="titulo-dex">Pokerdex</h1>
-                    <img class="btn-view" src="./assets/icons/list.png">
-                </div>
-
-                <input type="text" class="form-control">
-
-                <div class="dex-list">
-                    <div class="row">
-                        <div class="col">
-                            <div class="iten-dex">
-                                <b class="id-dex">#000</b>
-                                <div></div>
-                                <img class="dex-img"
-                                    src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+        </nav>
+        <noscript>
+            <div class="alert alert-danger" role="alert">
+                Você precisa habilitar o JavaScript para executar este aplicativo.
+            </div>
+        </noscript>
+        <h1 id="titulo-dex">Pokerdex</h1>
+    </header>
+   
+    <!--Lista dos pokemons na pokédex-->
+    <section class="pokedex-lista">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="dex-list">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="iten-dex">
+                            <img class="dex-img"
+                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            <div class="id-dex">N°000</div>
+                            <h3>Pokémon</h3>
+                            <div class="types">
+                                <div class="type">Grass</div>
+                                <div class="type">Poison</div>
                             </div>
                         </div>
+                    </a>
+                    </div>
+                </div>
 
-                        <div class="col">
-                            <div class="iten-dex">
-                                <b class="id-dex">#000</b>
-                                <img class="dex-img"
-                                    src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                <div class="col-sm">
+                    <div class="dex-list">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="iten-dex">
+                            <img class="dex-img"
+                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            <div class="id-dex">N°000</div>
+                            <h3>Pokémon</h3>
+                            <div class="types">
+                                <div class="type">Grass</div>
+                                <div class="type">Poison</div>
                             </div>
                         </div>
-
+                    </a>
                     </div>
                 </div>
 
-                <div>
+                <div class="col-sm">
+                    <div class="dex-list">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="iten-dex">
+                            <img class="dex-img"
+                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            <div class="id-dex">N°000</div>
+                            <h3>Pokémon</h3>
+                            <div class="types">
+                                <div class="type">Grass</div>
+                                <div class="type">Poison</div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
 
+                <div class="col-sm">
+                    <div class="dex-list">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="iten-dex">
+                            <img class="dex-img"
+                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+                            <div class="id-dex">N°000</div>
+                            <h3>Pokémon</h3>
+                            <div class="types">
+                                <div class="type">Grass</div>
+                                <div class="type">Poison</div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
             </div>
-            <!--Pokemon selecionado-->
-            <div class="col">
-                <div class="card-pokemon">
-                    <div class="card-info">
-                        <br>
-                       <h2 class="pokemon-nome">
-                           <b>Pokemon</b>
-                        </h2>
-                        <img class="pokemon-img" src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-                    </div>
-                    </div>
-                </div>
+
+        </div>
+
+    </section>
+
+    <!--Pokemon selecionado-->
+    <main>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="pokemon-card">
+                   <img src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+               </div>
             </div>
         </div>
-    </div>
+    </main>
 
+    <footer>
+        © 2022 Copyright - Francisco Weslley
+    </footer>
 </body>
 <!--JS global-->
 <script src="./js/main.js"></script>
