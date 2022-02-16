@@ -23,10 +23,61 @@ $fairy :#EE99AC;
     text-align: center;
     display: inline-block;
     border-radius: 20.6522px;
-    margin: 2%;
-    width: 40%;
+    margin: 1%;
+    width: 30%;
 }
 
 .normal {
+    @include color-type($normal, rgb(255, 255, 255));
+}
+.fire{
     @include color-type($fire, rgb(255, 255, 255));
+}
+.water{
+    @include color-type($water, rgb(255, 255, 255));
+}
+.grass{
+    @include color-type($grass, rgb(255, 255, 255));
+}
+.flying{
+    @include color-type($flying, rgb(255, 255, 255));
+}
+.fighting{
+    @include color-type($fighting, rgb(255, 255, 255));
+}
+.poison{
+    @include color-type($poison, rgb(255, 255, 255));
+}
+.electric{
+    @include color-type($electric, rgb(255, 255, 255));
+}
+.ground{
+    @include color-type($ground, rgb(255, 255, 255));
+}
+.rock{
+    @include color-type($rock, rgb(255, 255, 255));
+}
+.psychic{
+    @include color-type($psychic, rgb(255, 255, 255));
+}
+.ice{
+    @include color-type($ice, rgb(255, 255, 255));
+}
+.bug{
+    @include color-type($bug, rgb(255, 255, 255));
+}
+.ghost{
+    @include color-type($ghost, rgb(255, 255, 255));
+}
+.steel{
+    @include color-type($steel, rgb(255, 255, 255));
+}
+.dragon{
+    @include color-type($dragon, rgb(255, 255, 255));
+}
+.dark{
+    @include color-type($dark, rgb(255, 255, 255));
+}
+.fairy{
+    @include color-type($fairy, rgb(255, 255, 255));
 }

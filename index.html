@@ -21,6 +21,9 @@
     <!--CSS do pokemon seleconado-->
     <link rel="stylesheet" href="./css/pokemon.css">
 
+      <!--CSS dos types-->
+      <link rel="stylesheet" href="./css/scss/types.css">
+      
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex Online</title>
 </head>
@@ -34,82 +37,14 @@
                 Você precisa habilitar o JavaScript para executar este aplicativo.
             </div>
         </noscript>
-        <h1 id="titulo-dex">Pokerdex</h1>
+        <h1 id="titulo-dex">Pokédex</h1>
+        <input class="form-control" placeholder="buscar...">
     </header>
    
     <!--Lista dos pokemons na pokédex-->
     <section class="pokedex-lista">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="dex-list">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <div class="iten-dex">
-                            <img class="dex-img"
-                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-                            <div class="id-dex">N°000</div>
-                            <h3>Pokémon</h3>
-                            <div class="types">
-                                <div class="type">Grass</div>
-                                <div class="type">Poison</div>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="dex-list">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <div class="iten-dex">
-                            <img class="dex-img"
-                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-                            <div class="id-dex">N°000</div>
-                            <h3>Pokémon</h3>
-                            <div class="types">
-                                <div class="type">Grass</div>
-                                <div class="type">Poison</div>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="dex-list">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <div class="iten-dex">
-                            <img class="dex-img"
-                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-                            <div class="id-dex">N°000</div>
-                            <h3>Pokémon</h3>
-                            <div class="types">
-                                <div class="type">Grass</div>
-                                <div class="type">Poison</div>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="dex-list">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <div class="iten-dex">
-                            <img class="dex-img"
-                                src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-                            <div class="id-dex">N°000</div>
-                            <h3>Pokémon</h3>
-                            <div class="types">
-                                <div class="type">Grass</div>
-                                <div class="type">Poison</div>
-                            </div>
-                        </div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
+        <div class="container" id ='pokemonsList'>
+          
         </div>
 
     </section>
@@ -118,11 +53,31 @@
     <main>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-content">
+                <b class="pokemon-nome"> Pokémon</b>
             <div class="modal-dialog">
                <div class="pokemon-card">
-                   <img src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-               </div>
-            </div>
+                   <img class="pokemon-img" src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
+        </div>
+    </div>
+    <div class="pokemon-id">
+        <div class="btns-container">
+            <center>
+            <h5 class="btn-pokemon">Sobre</h5>
+            <h5 class="btn-pokemon">Status</h5>
+            <h5 class="btn-pokemon">Evoluções</h5>
+            <h5 class="btn-pokemon">Golpes</h5>
+        </center>
+        </div>
+        <h4 class="pokemon-status">Fraquezas</h4>
+        <div class="grass">Grass</div>
+        <div class="poison">Poison</div>
+        <div class="poison">Poison</div>
+        <div class="poison">Poison</div>
+        </div>
+    </div>
+    
+</div>
         </div>
     </main>
 
