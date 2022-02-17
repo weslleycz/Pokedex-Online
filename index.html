@@ -40,11 +40,9 @@
         <h1 id="titulo-dex">Pokédex</h1>
         <input class="form-control" placeholder="buscar...">
     </header>
-   
     <!--Lista dos pokemons na pokédex-->
     <section class="pokedex-lista">
         <div class="container" id ='pokemonsList'>
-          
         </div>
 
     </section>
@@ -53,31 +51,24 @@
     <main>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-content">
-                <b class="pokemon-nome"> Pokémon</b>
-            <div class="modal-dialog">
-               <div class="pokemon-card">
-                   <img class="pokemon-img" src="https://www.pngmart.com/files/2/Pikachu-PNG-Transparent-Image.png">
-        </div>
+            <div class="modal-content" id="modal-body">
+                <b class="pokemon-nome"> ${n}</b>
+    <div class="modal-dialog">
+       <div class="pokemon-card">
+           <img class="pokemon-img" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/1.svg">
+    </div>
     </div>
     <div class="pokemon-id">
-        <div class="btns-container">
-            <center>
-            <h5 class="btn-pokemon">Sobre</h5>
-            <h5 class="btn-pokemon">Status</h5>
-            <h5 class="btn-pokemon">Evoluções</h5>
-            <h5 class="btn-pokemon">Golpes</h5>
-        </center>
-        </div>
-        <h4 class="pokemon-status">Fraquezas</h4>
-        <div class="grass">Grass</div>
-        <div class="poison">Poison</div>
-        <div class="poison">Poison</div>
-        <div class="poison">Poison</div>
-        </div>
+    <div class="btns-container">
+    <center>
+    <h5 class="btn-pokemon">Sobre</h5>
+    <h5 class="btn-pokemon">Status</h5>
+    <h5 class="btn-pokemon">Evoluções</h5>
+    <h5 class="btn-pokemon">Golpes</h5>
+    </center>
     </div>
-    
-</div>
+    </div>
+            </div>
         </div>
     </main>
 
