@@ -22,7 +22,6 @@ function mostraPokemonsHtml(pokemons) {
             ${pokemon.types[1].type.name}</div>`
         } else(type = `<div class="${pokemon.types[0].type.name}">
         ${pokemon.types[0].type.name}</div>`);
-    
         return `<div class="col-sm"><div class="dex-list">
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
             onclick="selectPokemon(${pokemon.id-1})">
@@ -37,19 +36,20 @@ function mostraPokemonsHtml(pokemons) {
     })
     let pokemonList = "";
     for (let index = 0; index < cards.length; index++) {
-            pokemonList = pokemonList + cards[index]
+        pokemonList = pokemonList + cards[index]
     }
     html.innerHTML = row + pokemonList + div;
 }
 
-function selectPokemon(n){
-    if (pokemons[n]!=undefined) {
+function selectPokemon(n) {
+    if (pokemons[n] != undefined) {
         let html = document.getElementById('modal-body');
-        html.innerHTML = `<b class="pokemon-nome"> ${pokemons[n]
+        html.innerHTML = `
+        <b class="pokemon-nome"> ${pokemons[n]
             .name[0].toUpperCase()+pokemons[n].name.substr(1)}</b>
         <div class="modal-dialog">
            <div class="pokemon-card">
-               <img class="pokemon-img" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${n+1}.svg"">
+        <img class="pokemon-img" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${n+1}.svg"">
         </div>
         </div>
         <div class="card-down">
@@ -59,8 +59,30 @@ function selectPokemon(n){
         <h3>Peso: ${pokemons[n].weight/10}kg</h3>
         <h3>Status Base: ${pokemons[n].stats[0].base_stat}</h3>
         <h3>Experiencia base: ${pokemons[n].base_experience}</h3>
-        </div>
         `;
+    }
+}
+
+function searchPokemon() {
+    let search = []
+    let input = document.querySelector("#search").value;
+    input = input.toLowerCase();
+    if (input != "") {
+        pokemons.map(function (pokemon) {
+            if (pokemon.name.substring(0, input.length) === input) {
+                search.push(pokemon);
+            }
+        })
+        if (search.length != 0) {
+            mostraPokemonsHtml(search);
+        } else {
+            let html = document.getElementById('pokemonsList');
+            html.innerHTML = `<img class="not-found" src="./assets/images/Pikachu.gif">
+            `
+        }
+
+    } else {
+        mostraPokemonsHtml(pokemons);
     }
 }
 

@@ -38,15 +38,13 @@
             </div>
         </noscript>
         <h1 id="titulo-dex">Pokédex</h1>
-        <input class="form-control" placeholder="buscar...">
+        <input onkeyup="searchPokemon()" id="search" class="form-control" placeholder="Buscar...">
     </header>
     <!--Lista dos pokemons na pokédex-->
     <section class="pokedex-lista">
         <div class="container" id ='pokemonsList'>
         </div>
-
     </section>
-
     <!--Pokemon selecionado-->
     <main>
         <!-- Modal -->
@@ -60,18 +58,11 @@
     </div>
     <div class="pokemon-id">
     <div class="btns-container">
-    <center>
-    <h5 class="btn-pokemon">Sobre</h5>
-    <h5 class="btn-pokemon">Status</h5>
-    <h5 class="btn-pokemon">Evoluções</h5>
-    <h5 class="btn-pokemon">Golpes</h5>
-    </center>
     </div>
     </div>
             </div>
         </div>
     </main>
-
     <footer>
         © 2022 Copyright - Francisco Weslley
     </footer>

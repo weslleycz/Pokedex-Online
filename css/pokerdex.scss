@@ -10,11 +10,11 @@ h3 {
 
 .dex-img{
 height: 250px;
-width: 200;
+width: 250px;
 }
 
 .id-dex {
-    margin-left: 2%;
+    margin-left: 1%;
     font-size: 0.90em;
     color: rgb(110, 107, 107);
 }
@@ -22,6 +22,7 @@ width: 200;
 .iten-dex {
     background-color: rgb(230, 240, 240);
     width: 250px;
+    margin-left: 12%;
     display: block;
     margin-top: 10%;
 }
@@ -47,4 +48,9 @@ width: 200;
       background-image: url(../assets/icons/search.png);
       background-repeat: no-repeat;
       background-position:98%;
+  }
+
+  .not-found{
+    width: 60%; 
+    margin-left:18%;
   }
