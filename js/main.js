@@ -1,7 +1,7 @@
 const url = 'https://pokeapi.co/api/v2/pokemon/';
 let pokemons = [];
 const fetchPoke = async () => {
-    for (i = 1; i <= 151; i++) {
+    for (i = 1; i <= 251; i++) {
         const dados = await fetch(`${url}${i}`);
         const pokemon = await dados.json();
         pokemons.push(pokemon);
@@ -27,7 +27,7 @@ function mostraPokemonsHtml(pokemons) {
             onclick="selectPokemon(${pokemon.id-1})">
             <div class="iten-dex">
             <img class="dex-img"
-            src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemon.id}.svg">
+            src="https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png">
             <div class="id-dex">N°${pokemon.id}</div>
             <h3>${pokemon.name[0].toUpperCase()+pokemon.name.substr(1)}</h3>
             <div class="types">
@@ -41,7 +41,7 @@ function mostraPokemonsHtml(pokemons) {
     html.innerHTML = row + pokemonList + div;
 }
 
-function selectPokemon(n) {
+function selectPokemon (n) {
     if (pokemons[n] != undefined) {
         let html = document.getElementById('modal-body');
         html.innerHTML = `
@@ -49,7 +49,7 @@ function selectPokemon(n) {
             .name[0].toUpperCase()+pokemons[n].name.substr(1)}</b>
         <div class="modal-dialog">
            <div class="pokemon-card">
-        <img class="pokemon-img" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${n+1}.svg"">
+        <img class="pokemon-img" src="https://cdn.traction.one/pokedex/pokemon/${n+1}.png"">
         </div>
         </div>
         <div class="card-down">
